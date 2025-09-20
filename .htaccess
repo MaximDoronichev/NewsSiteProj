@@ -1,0 +1,23 @@
+<Files ~ "\.php$">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "index.php">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files ~ "\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|ttf)$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteCond %{REQUEST_URI} !\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ [NC]
+
+RewriteRule ^(.*)$ index.php?action=$1 [L,QSA]

@@ -1,0 +1,137 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+@font-face {
+    font-family: 'OpenSans Regular';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans SemiBold';
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+.headline{
+    margin-left: 8.6%;
+}
+
+.headline__header{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 115px;
+}
+
+.header__img{
+    margin-right: 14px;
+}
+
+.header__text{
+    color: #2C145E;
+    font-family:'Segoe UI Regular';
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 5px;
+}
+
+.headline__link{
+    display: flex;
+    margin-bottom: 21px;
+}
+
+.link__main{
+    text-decoration: none;
+    font-family: "OpenSans Regular";
+    color: black;
+}
+
+.link__page{
+    font-family: "OpenSans Regular";
+    color: gray;
+}
+
+.headline__title{
+    font-family: "OpenSans SemiBold";
+    font-size: 54px;
+    margin-bottom: 63px;
+}
+
+.headline__content{
+    display: flex;
+    align-items: center;
+}
+
+.content__info{
+    margin-right: 40px;
+}
+
+.info__date{
+    background-color: #ECF2F5;
+    border-radius: 20px;
+    width: 118px;
+    height: 34px;
+    margin-bottom: 30px;
+}
+
+.date__text{
+    padding-left: 18px;
+    padding-top: 6px;
+    color: gray;
+    font-family: 'OpenSans Regular';
+}
+
+.info__title{
+    font-family: "OpenSans SemiBold";
+    font-size: 54px;
+    width: 700px;
+}
+
+.info__announce{
+    font-family: "OpenSans SemiBold";
+    font-size: 32px;
+    color: #841844;
+    width: 739px;
+    margin-bottom: 40px;
+}
+
+.info__content{
+    font-family: "OpenSans Regular";
+    font-size: 20px;
+    width: 740px;
+    margin-top: 22px;
+    margin-bottom: 40px;
+}
+
+.info__back{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 283px;
+    height: 54px;
+    color: #841844;
+    border: 2px solid #841844;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'OpenSans SemiBold';
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.info__back:hover{
+    background-color: #841844;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.info__back:hover .back__img{
+    fill: white;
+}
+
+.content__image{
+    width: 740px;
+    height: 570px;
+    /*margin-top: 79px;*/
+}
